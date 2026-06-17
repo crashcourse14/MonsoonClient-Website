@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Monsoon Client 1.8</title>
+<link rel="stylesheet" href="/public/css/app.css">
+<link rel="icon" href="/public/assets/favicon.ico">
+</head>
+
+<body>
+
+<canvas id="particles"></canvas>
+<div class="glow"></div>
+
+<nav>
+    <div class="logo">MONSOON CLIENT</div>
+    <div>
+        <a href="#hero">Home</a>
+        <a href="#features">Features</a>
+        <a onclick="openSocials()">Socials</a>
+    </div>
+</nav>
+
+<div class="hero">
+    <h1>Next Gen Eaglercraft Client</h1>
+    <p>Fast. Clean. Powerful. Built for performance.</p>
+
+    <div class="buttons">
+        <div class="btn">CURRENTLY IN DEVELOPMENT</div>
+    </div>
+</div>
+
+<!-- ABOUT -->
+<div class="section">
+    <div class="card">
+        <h2>About</h2>
+        <p style="color:#aaa;margin-top:10px;">
+          Monsoon Client. Monsoon doesn't mean heavy rain. It really just means a big shift in wind... But in this case it's a Eaglercraft 1.8 client! It's built to improve player experience, to be FPS friendly, and to be very customizable. It's currently still In development; We're shooting for at LEAST 30 working mods. Once that's achieve we MIGHT release it. If not we'll shoot for 50+ mods.
+        </p>
+    </div>
+</div>
+
+
+<div class="section">
+    <div class="card">
+        <h2>Screenshots</h2>
+
+        <div class="carousel">
+            <button class="arrow left" onclick="prevImg()">&#10094;</button>
+            <button class="arrow right" onclick="nextImg()">&#10095;</button>
+
+            <img class="active" src="/public/assets/images/mainmenu.png">
+            <img src="/public/assets/images/audio.png">
+            <img src="/public/assets/images/clickgui.png">
+            <img src="/public/assets/images/watchname.png">
+            <img src="/public/assets/images/fps.png">
+        </div>
+    </div>
+</div>
+
+<div class="section" id="features">
+    <div class="card">
+        <h2>Features</h2>
+        <ul style="margin-top:10px;color:#aaa;line-height:1.8;">
+            <li>✔ FPS Optimization</li>
+            <li>✔ Custom HUD</li>
+            <li>✔ Mods System</li>
+            <li>✔ Smooth UI</li>
+        </ul>
+    </div>
+</div>
+
+<!-- WORKING ON -->
+<div class="section">
+    <div class="card">
+        <h2>We're Currently Working on...</h2>
+
+        <div class="work-grid">
+            <div class="work-card">⚙ Custom Font Renderer</div>
+            <div class="work-card">🧠 Draggable HUD</div>
+            <div class="work-card">🎯 More customization</div>
+            <div class="work-card">🎨 Working saving configuration</div>
+            <div class="work-card">📦 More Mods</div>
+            <div class="work-card">🚀 Performance Boost Update</div>
+        </div>
+    </div>
+</div>
+
+<footer>
+    © Monsoon Client — Built with style
+</footer>
+
+<script src="/public/javascript/app.js"></script>
+</body>
+</html>
