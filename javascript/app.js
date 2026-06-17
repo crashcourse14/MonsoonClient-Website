@@ -28,4 +28,13 @@ const observer = new IntersectionObserver(entries => {
 
 sections.forEach(sec => observer.observe(sec));
 
+function open2ndLink() {
+    window.open("https://stt.gg/FG6tXX0q");
+}
 
+function openSocials() {
+    alert("There's 2 social links. You may need enable pop-ups for both tabs to open.")
+    window.open("https://fluxer.gg/qfHZffiR");
+    
+    open2ndLink()
+}
