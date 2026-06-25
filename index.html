@@ -4,113 +4,122 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Monsoon Client | New Gen Eaglercraft 1.8 PvP Client</title>
-    <link rel="stylesheet" href="/css/app.css">
     <link rel="icon" href="/assets/favicon.ico">
     <meta name="description" content="Monsoon Client. The New Gen Eaglercraft 1.8 PvP Client.">
     <meta name="robots" content="index, follow">
     <meta property="og:title" content="Monsoon Client | New Gen Eaglercraft 1.8 PvP Client">
     <meta property="og:image" content="/assets/favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="/css/app.css">
 </head>
-
 <body>
 
-
     <nav>
-        <div class="logo">MONSOON CLIENT</div>
-        <div>
+        <div class="logo">MONSOON</div>
+        <div class="nav-links">
             <a href="#hero">Home</a>
             <a href="#features">Features</a>
+            <a href="#news">News</a>
             <a onclick="openSocials()">Socials</a>
         </div>
     </nav>
-
-    <div class="hero">
-        <h1>Next Gen Eaglercraft Client</h1>
-        <p>
-            A modern Eaglercraft 1.8 client focused on performance,
-            customization, and quality-of-life improvements.
-        </p>
-
-        <div class="buttons">
-            <div class="btn">CURRENTLY IN DEVELOPMENT</div>
+    <div class="hero" id="hero">
+        <div class="hero-content">
+            <span class="version-badge">Eaglercraft 1.8.8</span>
+            <h1>Next Gen Eaglercraft Client</h1>
+            <div class="hero-underline"></div>
+            <p>
+                A modern Eaglercraft 1.8 client focused on performance,
+                customization, and quality-of-life improvements.
+            </p>
+            <div class="buttons">
+                <div class="btn btn-disabled">
+                    <i class="fa-solid fa-hammer"></i>
+                    CURRENTLY IN DEVELOPMENT
+                </div>
+            </div>
         </div>
     </div>
-
-    <!-- ABOUT -->
     <div class="section">
         <div class="card">
-            <h2>About</h2>
-            <p style="color:#aaa;margin-top:10px;">
-            Monsoon Client. Monsoon doesn't mean heavy rain. It really just means a big shift in wind... But in this case it's a Eaglercraft 1.8 client! It's built to improve player experience, to be FPS friendly, and to be very customizable. It's currently still In development; We're shooting for at LEAST 30 working mods. Once that's achieve we MIGHT release it. If not we'll shoot for 50+ mods.
+            <div class="card-header">
+                <h2><i class="fa-solid fa-circle-info"></i> About</h2>
+            </div>
+            <p class="muted-text">
+                Monsoon doesn't mean heavy rain. It really just means a big shift in wind... But in this case, it's an Eaglercraft 1.8 client! It's built to improve player experience, to be FPS friendly, and to be highly customizable. It's currently still in development; we're shooting for at LEAST 30 working mods. Once that's achieved, we MIGHT release it. If not, we'll shoot for 50+ mods.
             </p>
         </div>
     </div>
 
-
     <div class="section">
         <div class="card">
-            <h2>Screenshots</h2>
-
+            <div class="card-header">
+                <h2><i class="fa-solid fa-images"></i> Screenshots</h2>
+            </div>
             <div class="carousel">
-                <button class="arrow left" onclick="prevImg()">&#10094;</button>
-                <button class="arrow right" onclick="nextImg()">&#10095;</button>
+                <button class="arrow left" onclick="prevImg()"><i class="fa-solid fa-chevron-left"></i></button>
+                <button class="arrow right" onclick="nextImg()"><i class="fa-solid fa-chevron-right"></i></button>
 
-                <img class="active" src="/assets/images/mainmenu.png">
-                <img src="/assets/images/audio.png">
-                <img src="/assets/images/clickgui.png">
-                <img src="/assets/images/watchname.png">
-                <img src="/assets/images/fps.png">
+                <img class="active" src="/assets/images/mainmenu.png" alt="Main Menu">
+                <img src="/assets/images/audio.png" alt="Audio Settings">
+                <img src="/assets/images/clickgui.png" alt="Click GUI">
+                <img src="/assets/images/watchname.png" alt="Watch Name">
+                <img src="/assets/images/fps.png" alt="FPS Performance">
             </div>
         </div>
     </div>
-    <div class="section">
 
-        <div class="feature-grid">
-
-            <div class="feature-card">
-                <h3>FPS Optimization</h3>
-                <p>Designed to improve performance while maintaining visuals.</p>
+    <div class="section" id="features">
+        <div class="card">
+            <div class="card-header">
+                <h2><i class="fa-solid fa-stars"></i> Core Features</h2>
             </div>
-
-            <div class="feature-card">
-                <h3>Custom HUD</h3>
-                <p>Move and customize your interface exactly how you want.</p>
+            <div class="feature-grid">
+                <div class="feature-card">
+                    <div class="feature-icon"><i class="fa-solid fa-gauge-high"></i></div>
+                    <h3>FPS Optimization</h3>
+                    <p>Designed to improve performance while maintaining visuals.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon"><i class="fa-solid fa-sliders"></i></div>
+                    <h3>Custom HUD</h3>
+                    <p>Move and customize your interface exactly how you want.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon"><i class="fa-solid fa-puzzle-piece"></i></div>
+                    <h3>Mod System</h3>
+                    <p>Toggle and configure client-side enhancements.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon"><i class="fa-solid fa-paintbrush"></i></div>
+                    <h3>Modern UI</h3>
+                    <p>Clean menus and polished, seamless interfaces.</p>
+                </div>
             </div>
-
-            <div class="feature-card">
-                <h3>Mod System</h3>
-                <p>Toggle and configure client-side enhancements.</p>
-            </div>
-
-            <div class="feature-card">
-                <h3>Modern UI</h3>
-                <p>Clean menus and polished animations. (No animations what so ever)</p>
-            </div>
-
         </div>
+    </div>
 
-        <div class="section">
-            <div class="card">
-                <h2>Latest News</h2>
-
-                <div class="news-grid">
-
-                    <div class="news-card" onclick="location.href='/articles/development-started.html'">
-                        <span>June 2026</span>
-                        <h3>Development Started</h3>
-                        <p>
-                            Found a working repository for Eaglercraft 1.8.8.
-                        </p>
-                        <p>Click for more.</p>
-                    </div>
-
+    <div class="section" id="news">
+        <div class="card">
+            <div class="card-header">
+                <h2><i class="fa-solid fa-newspaper"></i> Latest News</h2>
+            </div>
+            <div class="news-grid">
+                <div class="news-card" onclick="location.href='/articles/development-started.html'">
+                    <span class="news-date">June 2026</span>
+                    <h3>Development Started</h3>
+                    <p>Found a working repository for Eaglercraft 1.8.8 and began building the client architecture.</p>
+                    <div class="read-more">Read More <i class="fa-solid fa-arrow-right"></i></div>
                 </div>
             </div>
         </div>
     </div>
 
     <footer>
-        © Monsoon Client — Built with style
+        <p>© Monsoon Client — Built with style.</p>
     </footer>
 
     <script src="/javascript/app.js"></script>
